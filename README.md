@@ -11,3 +11,6 @@
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
 # TransPath(coming soon)
+
+Better and stronger pre-trained models will be released, and more downstream tasks will also be tested.Our detailed extended paper will be completed in a few days.We are planning to release many pre-trained models(15.11.2021 - 29.11.2021). Please stay tuned...
+
