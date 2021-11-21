@@ -12,5 +12,5 @@
 
 # TransPath(coming soon)
 
-Better and stronger pre-trained models will be released, and more downstream tasks will also be tested.Our detailed extended paper will be completed in a few days.We are planning to release many pre-trained models(15.11.2021 - 29.11.2021). Please stay tuned...
+Better and stronger pre-trained models will be released, and more downstream tasks will also be tested.Our detailed extended paper will be completed in a few days（Delayed by 2 weeks due to some technical reasons）.We are planning to release many pre-trained models(2.12.2021 - 9.12.2021). Please stay tuned...
 
