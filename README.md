@@ -10,6 +10,9 @@
 
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
+We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
+images.If you want these images, you can contact me
+The new better and stronger pre-trained models have [released](https://github.com/Xiyue-Wang/RetCCL)
 # TransPath(coming soon)
 
 Better and stronger pre-trained models will be released, and more downstream tasks will also be tested.Our detailed extended paper will be completed in a few days（Delayed by 2 weeks due to some technical reasons）.We are planning to release many pre-trained models(2.12.2021 - 9.12.2021). Please stay tuned...
