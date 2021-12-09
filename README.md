@@ -11,7 +11,8 @@
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
 We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
-images.If you want these images, you can contact me
+images.If you want these images, you can contact me.
+
 The new better and stronger pre-trained models have [released](https://github.com/Xiyue-Wang/RetCCL)
 # TransPath(coming soon)
 
