@@ -1,5 +1,7 @@
 
+## TransPath(coming soon)
 
+The new better and stronger pre-trained models have [released](https://github.com/Xiyue-Wang/RetCCL)
 #### Hardware
 
 * 128GB of RAM
@@ -13,8 +15,39 @@
 We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
 images.If you want these images, you can contact me.
 
-The new better and stronger pre-trained models have [released](https://github.com/Xiyue-Wang/RetCCL)
-# TransPath(coming soon)
+### Usage: Pre-Training Vision Transformers for histopathology images
 
-Better and stronger pre-trained models will be released, and more downstream tasks will also be tested.Our detailed extended paper will be completed in a few days（Delayed by 2 weeks due to some technical reasons）.We are planning to release many pre-trained models(2.12.2021 - 9.12.2021). Please stay tuned...
+#### 1.MoCo v3 
+We also trained [MoCo v3](https://arxiv.org/abs/2104.02057) on these histopathological images.
+The pre-trained  models can be downloaded as following:
+
+[vit_small]()
+
+[vit_conv_small]()
+
+#####Usage: Self-supervised Pre-Training
+please see the [instructions](https://github.com/facebookresearch/moco-v3)
+
+#####Usage: Get frozen features
+
+```
+python get_features.py \
+        -a vit_small
+```
+
+#####Usage: End-to-End Fine-tuning ViT
+To perform end-to-end fine-tuning for ViT, use our script to convert the pre-trained ViT checkpoint to [DEiT](https://github.com/facebookresearch/deit) format:
+```
+python convert_to_deit.py \
+  --input [your checkpoint path]/[your checkpoint file].pth.tar \
+  --output [target checkpoint file].pth
+```
+Then run the training (in the DeiT repo) with the converted checkpoint:
+```
+python $DEIT_DIR/main.py \
+  --resume [target checkpoint file].pth \
+  --epochs 150
+
+
+
 
