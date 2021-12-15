@@ -47,6 +47,7 @@ Then run the training (in the DeiT repo) with the converted checkpoint:
 python $DEIT_DIR/main.py \
   --resume [target checkpoint file].pth \
   --epochs 150
+```
 
 
 
