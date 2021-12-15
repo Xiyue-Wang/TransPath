@@ -6,7 +6,7 @@ num_classes =1000
 arg = CONFIGS['R50-ViT-B_16']
 model = VisionTransformer(arg, 256, zero_head=True, num_classes=num_classes)
 # print(model)
-state_dict = torch.load(r'/mnt/group-ai-medical-sz/private/scusenyang/Transpath/checkpoint.pth')
+state_dict = torch.load(r'./checkpoint.pth')
 
 for k in list(state_dict.keys()):
     # retain only base_encoder up to before the embedding layer
