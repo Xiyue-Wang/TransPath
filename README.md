@@ -25,17 +25,17 @@ The pre-trained  models can be downloaded as following:
 
 [vit_conv_small]()
 
-#####Usage: Self-supervised Pre-Training
+##### Usage: Self-supervised Pre-Training
 please see the [instructions](https://github.com/facebookresearch/moco-v3)
 
-#####Usage: Get frozen features
+##### Usage: Get frozen features
 
 ```
 python get_features.py \
         -a vit_small
 ```
 
-#####Usage: End-to-End Fine-tuning ViT
+##### Usage: End-to-End Fine-tuning ViT
 To perform end-to-end fine-tuning for ViT, use our script to convert the pre-trained ViT checkpoint to [DEiT](https://github.com/facebookresearch/deit) format:
 ```
 python convert_to_deit.py \
