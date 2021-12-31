@@ -21,9 +21,9 @@ images.If you want these images, you can contact me.
 We also trained [MoCo v3](https://arxiv.org/abs/2104.02057) on these histopathological images.
 The pre-trained  models can be downloaded as following:
 
-[vit_small]()
+[vit_small](https://drive.google.com/file/d/1c-VFOrsOtK5Sr8oZMqaBlZijYxnNBlB6/view?usp=sharing)
 
-[vit_conv_small]()
+[vit_conv_small](https://drive.google.com/file/d/1KjxjV-iuNsnO4JM_Qsm0NXPJyuP1Bbrk/view?usp=sharing)
 
 ##### Usage: Self-supervised Pre-Training
 please see the [instructions](https://github.com/facebookresearch/moco-v3)
