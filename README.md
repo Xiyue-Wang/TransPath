@@ -1,7 +1,7 @@
 
-## TransPath(coming soon)
+## TransPath
 
-The new better and stronger pre-trained models have [released](https://github.com/Xiyue-Wang/RetCCL)
+The new better and stronger pre-trained transformers models (CTransPath) will be released (under review)
 #### Hardware
 
 * 128GB of RAM
@@ -12,19 +12,30 @@ The new better and stronger pre-trained models have [released](https://github.co
 
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
-We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
+
+New:So, there will be about 15,000,000 images.
+
+Old:We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
 images.If you want these images, you can contact me.
 
 ### Usage: Pre-Training Vision Transformers for histopathology images
 
-#### 1.MoCo v3 
+
+
+### 1.CTransPath(coming soon)
+
+
+Downstream and evaluation code coming soon
+
+
+
+#### 2.MoCo v3 
 We also trained [MoCo v3](https://arxiv.org/abs/2104.02057) on these histopathological images.
 The pre-trained  models can be downloaded as following:
 
 [vit_small](https://drive.google.com/file/d/13d_SHy9t9JCwp_MsU2oOUZ5AvI6tsC-K/view?usp=sharing)
 
-[vit_conv_small](https://drive.google.com/file/d/1DyavcscqiRNrZY2d2fIwFCK5FvE1WRwG/view?usp=sharing)
-Undated the latest weights have been uploaded(1/10/2022)
+Undated the latest weights have been uploaded (1/10/2022)
 ##### Usage: Self-supervised Pre-Training
 please see the [instructions](https://github.com/facebookresearch/moco-v3)
 
@@ -48,7 +59,7 @@ python $DEIT_DIR/main.py \
   --epochs 150
 ```
 
-#### 2.TransPath
+#### 3.TransPath
 
 The pre-trained  models can be [downloaded](https://drive.google.com/file/d/1dhysqcv_Ct_A96qOF8i6COTK3jLb56vx/view?usp=sharing)
 
