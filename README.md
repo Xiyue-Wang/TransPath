@@ -20,7 +20,7 @@ images.If you want these images, you can contact me.
 
 ### Usage: Pre-Training Vision Transformers for histopathology images
 
-
+It is recommended that you use Ctranspath as the preferred histopathology images feature extractor
 
 #### 1.CTransPath
 
