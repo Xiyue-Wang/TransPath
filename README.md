@@ -47,7 +47,7 @@ python ctrans_lincls.py
 
 ```
 ##### Usage: End-to-End Fine-tuning
-comming soon
+
 Downstream and evaluation code coming soon
 
 #### 2.MoCo v3 
