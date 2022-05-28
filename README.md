@@ -22,7 +22,7 @@ images.If you want these images, you can contact me.
 
 
 
-#### 1.CTransPath()
+#### 1.CTransPath
 
 ##### Usage: Preparation
 Install the modified [timm](https://drive.google.com/file/d/1JV7aj9rKqGedXY1TdDfi3dP07022hcgZ/view?usp=sharing) library
