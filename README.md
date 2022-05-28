@@ -1,7 +1,7 @@
 
 ## TransPath
 
-The new better and stronger pre-trained transformers models (CTransPath) will be released (under review)
+The new better and stronger pre-trained transformers models (CTransPath) has been released 
 #### Hardware
 
 * 128GB of RAM
@@ -22,12 +22,32 @@ images.If you want these images, you can contact me.
 
 
 
-### 1.CTransPath(coming soon)
+#### 1.CTransPath()
 
+##### Usage: Preparation
+Install the modified [timm](https://drive.google.com/file/d/1JV7aj9rKqGedXY1TdDfi3dP07022hcgZ/view?usp=sharing) library
+```
+pip install timm-0.5.4.tar
+```
+
+The pre-trained models can be [downloaded](https://drive.google.com/file/d/1DoDx_70_TLj98gTf6YTXnu4tFhsFocDX/view?usp=sharing)
+
+##### Usage: Get frozen features
+
+```
+python get_features_CTransPath.py
+
+```
+
+##### Usage: Linear Classification
+For linear classification on frozen features/weights
+
+```
+python ctrans_lincls.py
+
+```
 
 Downstream and evaluation code coming soon
-
-
 
 #### 2.MoCo v3 
 We also trained [MoCo v3](https://arxiv.org/abs/2104.02057) on these histopathological images.
