@@ -36,7 +36,6 @@ The pre-trained models can be [downloaded](https://drive.google.com/file/d/1DoDx
 
 ```
 python get_features_CTransPath.py
-
 ```
 
 ##### Usage: Linear Classification
@@ -44,7 +43,6 @@ For linear classification on frozen features/weights
 
 ```
 python ctrans_lincls.py
-
 ```
 ##### Usage: End-to-End Fine-tuning
 
