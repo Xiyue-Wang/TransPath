@@ -1,7 +1,7 @@
 
 ## TransPath
 
-The new better and stronger pre-trained transformers models (CTransPath) has been released 
+The new better and stronger pre-trained transformers models (CTransPath) has been released(Under Review)
 #### Hardware
 
 * 128GB of RAM
