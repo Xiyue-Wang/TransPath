@@ -106,6 +106,8 @@ python convert_to_transpath.py
 * [Google ViT](https://github.com/google-research/vision_transformer)
 * [Pytorch Image Models(timm)](https://github.com/rwightman/pytorch-image-models)
 
+Please open new threads or address all questions to xiyue.wang.scu@gmail.com
+
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
