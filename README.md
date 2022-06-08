@@ -1,7 +1,7 @@
 
 ## TransPath
 ## Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification
-The new better and stronger pre-trained transformers models (CTransPath) has been released (Under Review)
+The new better and stronger pre-trained transformers models (**CTransPath**) has been released (**Under Review**)
 #### Hardware
 
 * 128GB of RAM
@@ -123,7 +123,7 @@ Please use below to cite this paper if you find our work useful in your research
 ``` 
 
 ```
-@inproceedings{wang2022,
+@{wang2022,
   title={Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification},
   author={Wang, Xiyue and Yang, Sen and Zhang, Jun and Wang, Minghui and Zhang, Jing  and Yang, Wei and Huang, Junzhou  and Han, Xiao},
 }
