@@ -107,7 +107,9 @@ python convert_to_transpath.py
 * [Pytorch Image Models(timm)](https://github.com/rwightman/pytorch-image-models)
 
 Please open new threads or address all questions to xiyue.wang.scu@gmail.com
+## License
 
+Detectron2 is released under the [Apache 2.0 license](LICENSE).
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
