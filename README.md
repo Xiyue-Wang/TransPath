@@ -113,7 +113,7 @@ TransPath is released under the [Apache 2.0 license](LICENSE).
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
-```
+```bibtex
 @inproceedings{wang2021transpath,
   title={TransPath: Transformer-Based Self-supervised Learning for Histopathological Image Classification},
   author={Wang, Xiyue and Yang, Sen and Zhang, Jun and Wang, Minghui and Zhang, Jing and Huang, Junzhou and Yang, Wei and Han, Xiao},
@@ -124,8 +124,8 @@ Please use below to cite this paper if you find our work useful in your research
 }
 ``` 
 
-```
-@{wang2022,
+```bibtex
+@misc{wang2022,
   title={Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification},
   author={Wang, Xiyue and Yang, Sen and Zhang, Jun and Wang, Minghui and Zhang, Jing  and Yang, Wei and Huang, Junzhou  and Han, Xiao},
 }
