@@ -37,6 +37,7 @@ The pre-trained models can be [downloaded](https://drive.google.com/file/d/1DoDx
 ```
 python get_features_CTransPath.py
 ```
+It is recommended to first try to extract features at 1.0mpp, and then try other magnifications
 
 ##### Usage: Linear Classification
 For linear classification on frozen features/weights
