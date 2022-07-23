@@ -110,7 +110,7 @@ python convert_to_transpath.py
 Please open new threads or address all questions to xiyue.wang.scu@gmail.com
 ## License
 
-TransPath is released under the [Apache 2.0 license](LICENSE).
+TransPath is released under the GPLv3 License and is available for non-commercial academic purposes.
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
