@@ -13,9 +13,9 @@ The new better and stronger pre-trained transformers models (**CTransPath**) has
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
 
-New:So, there will be about 15,000,000 images.
+New: So, there will be about 15,000,000 images.
 
-Old:We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
+Old: We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
 images.If you want these images, you can contact me.
 
 ### Usage: Pre-Training Vision Transformers for histopathology images
@@ -47,7 +47,7 @@ python ctrans_lincls.py
 ```
 ##### Usage: End-to-End Fine-tuning
 
-Downstream and evaluation code coming soon
+Similar to Swin or ViT,please see the [instructions](https://github.com/microsoft/Swin-Transformer#swin-transformer) or [DEiT](https://github.com/facebookresearch/deit)
 
 #### 2.MoCo v3 
 We also trained [MoCo v3](https://arxiv.org/abs/2104.02057) on these histopathological images.
@@ -114,6 +114,18 @@ TransPath is released under the GPLv3 License and is available for non-commercia
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
+
+
+```
+@{wang2022,
+  title={Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification},
+  author={Wang, Xiyue and Yang, Sen and Zhang, Jun and Wang, Minghui and Zhang, Jing  and Yang, Wei and Huang, Junzhou  and Han, Xiao},
+  journal={Medical Image Analysis},
+  year={2022},
+  publisher={Elsevier}
+}
+``` 
+
 ```
 @inproceedings{wang2021transpath,
   title={TransPath: Transformer-Based Self-supervised Learning for Histopathological Image Classification},
@@ -125,12 +137,7 @@ Please use below to cite this paper if you find our work useful in your research
 }
 ``` 
 
-```
-@{wang2022,
-  title={Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification},
-  author={Wang, Xiyue and Yang, Sen and Zhang, Jun and Wang, Minghui and Zhang, Jing  and Yang, Wei and Huang, Junzhou  and Han, Xiao},
-}
-``` 
+
 
 
 
