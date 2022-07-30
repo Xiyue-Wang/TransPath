@@ -1,7 +1,7 @@
 
 ## TransPath
 ## Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification
-The new better and stronger pre-trained transformers models (**CTransPath**) has been released (**Under Review**)
+The new better and stronger pre-trained transformers models [(**CTransPath**)](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043) has been released.
 #### Hardware
 
 * 128GB of RAM
@@ -113,7 +113,7 @@ Please open new threads or address all questions to xiyue.wang.scu@gmail.com
 TransPath is released under the GPLv3 License and is available for non-commercial academic purposes.
 
 ### Citation
-Please use below to cite this paper if you find our work useful in your research.
+Please use below to cite this [paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043) if you find our work useful in your research.
 
 
 ```
