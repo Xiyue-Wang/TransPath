@@ -23,16 +23,15 @@ class MoCo(nn.Module):
         self.base_encoder = base_encoder(num_classes=mlp_dim)
         self.momentum_encoder = base_encoder(num_classes=mlp_dim)
         
-        self.base_encoder.head=nn.Identity()
-        self.momentum_encoder.head=nn.Identity()
-        
-        
 
         self._build_projector_and_predictor_mlps(dim, mlp_dim)
 
         for param_b, param_m in zip(self.base_encoder.parameters(), self.momentum_encoder.parameters()):
             param_m.data.copy_(param_b.data)  # initialize
             param_m.requires_grad = False  # not update by gradient
+        
+        self.base_encoder.head=nn.Identity()
+        self.momentum_encoder.head=nn.Identity()
 
     def _build_mlp(self, num_layers, input_dim, mlp_dim, output_dim, last_bn=True):
         mlp = []
