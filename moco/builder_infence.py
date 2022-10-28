@@ -22,6 +22,11 @@ class MoCo(nn.Module):
         # build encoders
         self.base_encoder = base_encoder(num_classes=mlp_dim)
         self.momentum_encoder = base_encoder(num_classes=mlp_dim)
+        
+        self.base_encoder.head=nn.Identity()
+        self.momentum_encoder.head=nn.Identity()
+        
+        
 
         self._build_projector_and_predictor_mlps(dim, mlp_dim)
 
