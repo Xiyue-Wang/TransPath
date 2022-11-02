@@ -1,9 +1,10 @@
 
 ## TransPath
-## Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification
+## Transformer-based Unsupervised Contrastive Learning for Histopathological Image Classification *Medical Image Analysis*
 The new better and stronger pre-trained transformers models [(**CTransPath**)](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043) has been released.
 
-#### [Journal](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043)
+[Journal Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043)
+
 #### Hardware
 
 * 128GB of RAM
