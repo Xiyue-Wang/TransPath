@@ -19,7 +19,7 @@ The new better and stronger pre-trained transformers models [(**CTransPath**)](h
 New: So, there will be about 15,000,000 images.
 
 Old: We crop these WSIs into patch images.we randomly select 100 images from each WSI.Finally,So, there will be about 2,700,521 unlabeled histopathological
-images.If you want these images, you can contact me.
+images.
 
 ### Usage: Pre-Training Vision Transformers for histopathology images
 
