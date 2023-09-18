@@ -48,7 +48,6 @@ def extract_features_from_h5_wsi(h5_wsi: h5py.File, model: torch.nn.Module, batc
     return features.to("cpu")
 
 
-#
 @click.command()
 @click.option("--output-features-path", type=click.Path(exists=False),
               required=True, help="The directory inside which the extracted features should be saved",
