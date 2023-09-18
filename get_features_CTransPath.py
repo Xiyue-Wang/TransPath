@@ -1,10 +1,12 @@
+import os
+
 import click
 import h5py
 import torch
 import torch.nn as nn
+import tqdm
 
 from ctran import ctranspath
-
 from fe_utils import get_h5_list, extract_features_from_h5_wsi, TRANSFORM
 
 

@@ -1,5 +1,6 @@
 import argparse
 from functools import partial
+import os
 
 import numpy as np
 import pandas as pd
@@ -10,6 +11,9 @@ import torchvision.models as torchvision_models
 from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
+import tqdm
+import click
+import h5py
 
 import moco.builder_infence
 import moco.loader
