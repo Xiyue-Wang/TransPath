@@ -5,7 +5,7 @@ The new better and stronger pre-trained transformers models [(**CTransPath**)](h
 
 [Journal Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043)
 
-## Will update： CTransPath v2 coming soon (contains pre-training with over 100,000 WSIs).
+## Will update： CTransPath v2 coming soon (contains pre-training with over 100,000 WSIs) (Under Review).
 It will be at least 5% better than **CtransPath**.
 
 #### Hardware
