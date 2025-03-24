@@ -30,7 +30,7 @@ test_transform = transforms.Compose(
 
 
 class PatchDataset(Dataset):
-    def __init__(self, patches, data_transform):
+    def __init__(self, patches):
         self.patches = patches
 
     def __len__(self):
@@ -82,7 +82,7 @@ def compute_embeddings(model: nn.Module, files_to_encode: Iterable[str], dataset
     for file_path in tqdm(file_paths):
         patches = load_patches(file_path, group_suffix="256")
 
-        patch_dataset = PatchDataset(patches, data_transform=data_transform)
+        patch_dataset = PatchDataset(patches)
         # create dataloader
         patch_loader = DataLoader(
             patch_dataset,
