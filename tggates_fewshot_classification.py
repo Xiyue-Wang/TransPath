@@ -180,7 +180,7 @@ def load_input_and_labels(training_set: dict[str, int], embedding_dir: Path) -> 
         embeddings = torch.load(embedding_dir / f"{filename}.pth")
         mean_emb = embeddings.mean(dim=0).numpy()
         X.append(mean_emb)
-        y.append([label])
+        y.append(label)
     # concatenate the np arrays
     X = np.stack(X)
     y = np.stack(y)
