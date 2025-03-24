@@ -57,18 +57,6 @@ def get_args_parser():
         help="Path to the dataset directory",
         required=True,
     )
-    parser.add_argument(
-        "--train-set-path",
-        type=str,
-        help="Path to the train set pth file",
-        required=True,
-    )
-    parser.add_argument(
-        "--test-set-path",
-        type=str,
-        help="Path to the test set pth file",
-        required=True,
-    )
     return parser
 
 def main(args):

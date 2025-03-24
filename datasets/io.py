@@ -1,5 +1,5 @@
 import io
-from typing import List
+from typing import List, Any
 
 import h5py
 from PIL import Image
