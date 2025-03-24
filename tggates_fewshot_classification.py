@@ -7,13 +7,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torchvision
-import tqdm
 from PIL import Image
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 from torchvision import transforms
+from tqdm import tqdm
 
 from ctran import ctranspath
 from datasets.io import load_patches
