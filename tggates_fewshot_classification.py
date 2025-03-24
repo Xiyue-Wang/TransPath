@@ -123,12 +123,18 @@ def main(args):
     # compute embeddings if necessary
     train_files_to_encode = set()
     for class_dict in class_train_set.values():
-        train_files_to_encode.update(class_dict.keys())
+        # add files only if they don't exist in the output directory
+        for filename in class_dict.keys():
+            if not (output_dir / "train" / f"{filename}.pth").exists():
+                train_files_to_encode.add(filename)
     if len(train_files_to_encode) > 0:
         compute_embeddings(model, train_files_to_encode, dataset_dir / "train", output_dir / "train")
     test_files_to_encode = set()
     for class_dict in class_test_set.values():
-        test_files_to_encode.update(class_dict.keys())
+        # add files only if they don't exist in the output directory
+        for filename in class_dict.keys():
+            if not (output_dir / "test" / f"{filename}.pth").exists():
+                test_files_to_encode.add(filename)
     if len(test_files_to_encode) > 0:
         compute_embeddings(model, test_files_to_encode, dataset_dir / "test", output_dir / "test")
 
