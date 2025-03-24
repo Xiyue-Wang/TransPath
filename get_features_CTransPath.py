@@ -65,6 +65,7 @@ def main(args):
     model.head = nn.Identity()
     td = torch.load(args.pretrained_weights)
     model.load_state_dict(td['model'], strict=True)
+    model.cuda()
     model.eval()
     with torch.no_grad():
         # run inference on random batch
