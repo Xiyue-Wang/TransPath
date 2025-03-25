@@ -41,7 +41,7 @@ The pre-trained models can be [downloaded](https://drive.google.com/file/d/1DoDx
 ##### Usage: Get frozen features (tggates)
 
 ```
-torchrun --nproc_per_node=8 get_features_CTransPath.py --pretrained-weights /storage_mlr/lts/pathology/models/ctranspath/checkpoint.pth --dataset-dir DATASET_DIR --output-dir OUTPUT_DIR --batch-size 1024
+torchrun --nproc_per_node=8 get_features_CTransPath.py --pretrained-weights /storage_mlr/lts/pathology/models/ctranspath/ctranspath.pth --dataset-dir DATASET_DIR --output-dir OUTPUT_DIR --batch-size 1024
 ```
 It is recommended to first try to extract features at 1.0mpp, and then try other magnifications
 
