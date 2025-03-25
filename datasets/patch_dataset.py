@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Callable
 
 from torch.utils.data import Dataset
 

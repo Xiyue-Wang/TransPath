@@ -38,12 +38,19 @@ pip install timm-0.5.4.tar
 
 The pre-trained models can be [downloaded](https://drive.google.com/file/d/1DoDx_70_TLj98gTf6YTXnu4tFhsFocDX/view?usp=sharing)
 
-##### Usage: Get frozen features
+##### Usage: Get frozen features (tggates)
 
 ```
-python get_features_CTransPath.py
+torchrun --nproc_per_node=8 get_features_CTransPath.py --pretrained-weights /storage_mlr/lts/pathology/models/ctranspath/checkpoint.pth --dataset-dir DATASET_DIR --output-dir OUTPUT_DIR --batch-size 1024
 ```
 It is recommended to first try to extract features at 1.0mpp, and then try other magnifications
+
+##### Usage: tggates few-shot classification
+```
+python tggates_fewshot_classification.py --output-dir OUTPUT_DIR --dataset-dir DATASET_DIR --train-set-path TRAIN_SET_PATH --test-set-path TEST_SET_PATH
+```
+`TRAIN_SET_PATH`/`TEST_SET_PATH` should point to the `.pth` files containing the filenames and labels per class. 
+The patch files will then be loaded from the `DATASET_DIR`, their embeddings computed and then the few-shot classification will be performed.
 
 ##### Usage: Linear Classification
 For linear classification on frozen features/weights
