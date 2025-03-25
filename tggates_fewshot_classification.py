@@ -17,6 +17,7 @@ from tqdm import tqdm
 
 from ctran import ctranspath
 from datasets.io import load_patches
+from datasets.patch_dataset import PatchDataset
 
 mean = (0.485, 0.456, 0.406)
 std = (0.229, 0.224, 0.225)
@@ -27,18 +28,6 @@ test_transform = transforms.Compose(
         transforms.Normalize(mean=mean, std=std)
     ]
 )
-
-
-class PatchDataset(Dataset):
-    def __init__(self, patches):
-        self.patches = patches
-
-    def __len__(self):
-        return len(self.patches)
-
-    def __getitem__(self, idx):
-        return test_transform(self.patches[idx])
-
 
 def get_args_parser():
     parser = argparse.ArgumentParser()
@@ -80,9 +69,7 @@ def compute_embeddings(model: nn.Module, files_to_encode: Iterable[str], dataset
     file_paths = [dataset_dir / f"{patch_file}.h5" for patch_file in files_to_encode]
     print(f"Computing embeddings for {len(file_paths)} files")
     for file_path in tqdm(file_paths):
-        patches = load_patches(file_path, group_suffix="256")
-
-        patch_dataset = PatchDataset(patches)
+        patch_dataset = PatchDataset(file_path, test_transform)
         # create dataloader
         patch_loader = DataLoader(
             patch_dataset,
