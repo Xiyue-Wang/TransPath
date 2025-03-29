@@ -5,8 +5,7 @@ The new better and stronger pre-trained transformers models [(**CTransPath**)](h
 
 [Journal Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002043)
 
-## Will update： CTransPath v2 coming soon (contains pre-training with over 100,000 WSIs) (Under Review).
-It will be at least 5% better than **CtransPath**.
+
 
 #### Hardware
 
@@ -14,7 +13,7 @@ It will be at least 5% better than **CtransPath**.
 * 32*Nvidia V100 32G GPUs
 
 ### Preparations
-1.Download all [TCGA](https://portal.gdc.cancer.gov/projects?filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22projects.program.name%22%2C%22value%22%3A%5B%22TCGA%22%5D%7D%7D%5D%7D) WSIs.
+1.Download all [TCGA](https://portal.gdc.cancer.gov/analysis_page?app=Downloads) WSIs.
 
 2.Download all [PAIP](http://wisepaip.org/paip) WSI
 
